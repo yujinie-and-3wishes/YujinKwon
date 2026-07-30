@@ -30,8 +30,18 @@
   .hero .bracket{font-size:38px;}
   .hero h1{font-size:42px;}
   .hero .tagline{font-size:18px; color:var(--ink-soft); max-width:520px; margin:0 auto 20px;}
-  .fields{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:28px;}
-  .fields span{font-size:13px; border:1px solid var(--rule); border-radius:999px; padding:5px 14px; color:var(--ink-soft);}
+  .fields {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.fields span {
+  white-space: nowrap;
+}
   .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
   .btn{display:inline-block; padding:10px 20px; border-radius:6px; font-size:14px; font-weight:500; border:1px solid var(--ink);}
   .btn.primary{background:var(--ink); color:var(--paper);}
