@@ -60,7 +60,11 @@
   .ref .name{font-weight:600; font-size:16px;}
   .ref .role{font-size:14px; color:var(--ink-soft); margin-bottom:2px;}
   footer{text-align:center; padding:40px 24px 60px; font-size:13px; color:var(--ink-soft);}
-  @media (max-width:600px){.hero h1{font-size:32px;}}
+  .pantry-photos{display:flex; gap:16px; margin:0 0 32px 0; flex-wrap:wrap;}
+  .pantry-photos figure{flex:1 1 260px; margin:0;}
+  .pantry-photos img{width:100%; height:260px; object-fit:cover; border-radius:6px; border:1px solid var(--rule); display:block;}
+  .pantry-photos figcaption{font-size:13px; color:var(--ink-soft); margin-top:8px; text-align:center; font-style:italic;}
+  @media (max-width:600px){.hero h1{font-size:32px;} .pantry-photos{flex-direction:column;}}
 </style>
 
 </head>
@@ -74,7 +78,19 @@
 
 <main>
 <div class="section-title"><h2>Beyond Academia</h2></div>
-<p>Each week, I volunteer at the <a href="https://ssvdp.org/" target="_blank" rel="noopener">Society of St. Vincent de Paul</a> food pantry in Austin, helping distribute food and supplies to neighbors in need. It's become one of the most grounding parts of my week — a chance to know people in my community outside of the university, and a good reminder of why the policy questions I study matter to real people's lives.</p>
+
+<div class="pantry-photos">
+  <figure>
+    <img src="images/pantry1.jpg" alt="Volunteering at the St. Vincent de Paul food pantry">
+    <figcaption>At the pantry, Austin.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/pantry2.jpg" alt="Volunteering at the St. Vincent de Paul food pantry">
+    <figcaption>Sorting donations with fellow volunteers.</figcaption>
+  </figure>
+</div>
+
+<p>I have been honored to help serve our neighbors at the <a href="https://ssvdp.org/" target="_blank" rel="noopener">Society of St. Vincent de Paul</a> food pantry in Austin (almost) every week since the summer of 2022. It is the highlight of my week and gives me a chance to step outside academia and connect with the broader community. I have learned so much from working alongside such dedicated and warm-hearted volunteers. It has also taught me that food distributors are pretty bad at estimating the weekly demand for certain products, especially strawberries and salads!</p>
 
 </main>
 <footer>&copy; Yujin Kwon</footer>
