@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Yujin Kwon — Home</title>
+<title>Beyond Academia — Yujin Kwon</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -25,19 +25,13 @@
   nav a.active{color:var(--ink); border-bottom:2px solid var(--accent-warm); padding-bottom:2px;}
   main{max-width:760px; margin:0 auto; padding:64px 24px; min-height:60vh;}
   .eyebrow{font-size:14px; letter-spacing:0.03em; color:var(--ink-soft); margin-bottom:6px;}
-  .hero{text-align:center; padding:32px 24px 64px;}
-  .hero .profile-photo{width:280px; height:380px; border-radius:12px; object-fit:cover; object-position:center top; border:1px solid var(--rule); margin-bottom:20px;}
+  .hero{text-align:center; padding:80px 24px 64px;}
   .hero .bracket{font-size:38px;}
   .hero h1{font-size:42px;}
   .hero .tagline{font-size:18px; color:var(--ink-soft); max-width:520px; margin:0 auto 20px;}
-  .hero .tagline.role-line{font-size:14px; letter-spacing:0.01em; white-space:nowrap; margin-bottom:22px;}
-  .hero .tagline.intro{font-family:Cambria, 'PT Serif', Georgia, serif; font-weight:400; font-size:17px; line-height:1.8; color:var(--ink-soft); max-width:560px;}
-  .fields{display:flex; gap:8px; justify-content:center; flex-wrap:nowrap; margin-bottom:28px; font-family:Cambria, 'PT Serif', Georgia, serif;}
-  .fields span{font-size:11.5px; font-weight:300; letter-spacing:0.01em; border:1px solid var(--rule); border-radius:999px; padding:4px 12px; color:var(--ink-soft); white-space:nowrap;}
-  @media (max-width:600px){.fields{flex-wrap:wrap;}}
-  .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; align-items:flex-start;}
-  .btn-with-note{display:flex; flex-direction:column; align-items:center; gap:5px;}
-  .btn-note{font-size:12px; color:var(--ink-soft); font-style:italic;}
+  .fields{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:28px;}
+  .fields span{font-size:13px; border:1px solid var(--rule); border-radius:999px; padding:5px 14px; color:var(--ink-soft);}
+  .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
   .btn{display:inline-block; padding:10px 20px; border-radius:6px; font-size:14px; font-weight:500; border:1px solid var(--ink);}
   .btn.primary{background:var(--ink); color:var(--paper);}
   .btn.primary:hover{background:var(--accent); border-color:var(--accent); text-decoration:none;}
@@ -53,6 +47,8 @@
   .paper .authors{font-size:14px; color:var(--ink-soft); margin-bottom:10px;}
   .paper p{margin:0 0 10px 0; font-size:15px;}
   .paper .links a{font-size:14px; margin-right:16px; font-weight:500;}
+  .abstract{color:var(--ink); font-style:normal;}
+  .abstract strong{font-weight:600;}
   .placeholder{color:#B5AC98; font-style:italic;}
   ul.plain{list-style:none; padding:0; margin:0;}
   ul.plain li{padding:10px 0; border-top:1px solid var(--rule); font-size:15px;}
@@ -63,46 +59,57 @@
   .ref .name{font-weight:600; font-size:16px;}
   .ref .role{font-size:14px; color:var(--ink-soft); margin-bottom:2px;}
   footer{text-align:center; padding:40px 24px 60px; font-size:13px; color:var(--ink-soft);}
-  @media (max-width:600px){.hero h1{font-size:32px;} .hero .tagline.role-line{white-space:normal; font-size:13px;}}
+  .pantry-photos{display:flex; gap:16px; margin:0 0 32px 0; flex-wrap:wrap;}
+  .pantry-photos figure{flex:1 1 260px; margin:0; position:relative;}
+  .pantry-photos img{width:100%; height:260px; object-fit:cover; border-radius:6px; border:1px solid var(--rule); display:block;}
+  .pantry-photos figcaption{font-size:13px; color:var(--ink-soft); margin-top:8px; text-align:center; font-style:italic;}
+  .pantry-photos.three-up figure{flex-basis:200px;}
+  .pantry-photos.three-up img{height:200px;}
+  .photo-credit{position:absolute; left:10px; bottom:10px; font-size:11px; line-height:1; color:#fff;
+    background:rgba(28,37,65,0.55); padding:4px 8px; border-radius:4px; letter-spacing:0.01em; font-style:italic;}
+  @media (max-width:600px){.hero h1{font-size:32px;} .pantry-photos{flex-direction:column;}}
 </style>
+
 </head>
 <body>
 <nav>
-  <a href="index.html" class="active">Home</a>
+  <a href="index.html" class="">Home</a>
   <a href="research.html" class="">Research</a>
   <a href="teaching.html" class="">Teaching</a>
-  <a href="beyond.html" class="">Beyond Academia</a>
+  <a href="beyond.html" class="active">Beyond Academia</a>
 </nav>
 
 <main>
-<div class="hero">
-  <img src="profile.jpg" alt="Yujin Kwon" class="profile-photo">
-  <h1>Yujin Kwon</h1>
-  <p class="tagline role-line">PhD Candidate in Economics, The University of Texas at Austin</p>
-  <div class="fields">
-    <span>Econometrics</span>
-    <span>Applied Microeconometrics</span>
-    <span>Economics of Education</span>
-  </div>
-  <p class="tagline intro">My research spans econometric theory, causal inference, and economics of education. I develop methodological tools to address the data challenges that arise in complex empirical settings and apply them to evaluate education policies in the United States from a causal perspective. By integrating methodological innovation with empirical research, I aim to produce evidence that is both methodologically rigorous and policy relevant.</p>
-  <div class="cta-row">
-    <div class="btn-with-note">
-      <a class="btn primary" href="#" target="_blank" rel="noopener">Job Market Paper</a>
-      <span class="btn-note">(To be updated)</span>
-    </div>
-    <a class="btn secondary" href="YK CV_uptodate.pdf" target="_blank" rel="noopener">CV</a>
-    <a class="btn secondary" href="mailto:kwonyujin@utexas.edu">Email</a>
-  </div>
+<div class="section-title"><h2>Serving our Neighbors</h2></div>
+
+<div class="pantry-photos">
+  <figure>
+    <img src="pantry1.jpg" alt="St. Vincent de Paul food pantry (photography: Central Texas Food Bank)">
+    <span class="photo-credit">Photo: Central Texas Food Bank</span>
+  </figure>
+  <figure>
+    <img src="pantry2.jpg" alt="St. Vincent de Paul food pantry (photography: Central Texas Food Bank)">
+    <span class="photo-credit">Photo: Central Texas Food Bank</span>
+  </figure>
 </div>
 
-<div class="section-title"><span class="bracket">[</span><h2>Contact</h2><span class="bracket">]</span></div>
-<p>
-  Department of Economics<br>
-  The University of Texas at Austin<br>
-  2225 Speedway, BRB 4.132, C3100<br>
-  Austin, TX 78712
-</p>
-<p>Email: <a href="mailto:kwonyujin@utexas.edu">kwonyujin@utexas.edu</a></p>
+<p>I have been honored to help serve our neighbors at the <a href="https://ssvdp.org/" target="_blank" rel="noopener">Society of St. Vincent de Paul</a> food pantry in Austin (almost) every week since the summer of 2022. It is the highlight of my week and gives me a chance to step outside academia and connect with the broader community. I have learned so much from working alongside such dedicated and warm-hearted volunteers. It has also taught me that food distributors are pretty bad at estimating the weekly demand for certain products, especially strawberries and salads!</p>
+
+<div class="section-title" style="margin-top:56px;"><h2>The Baker in Progress</h2></div>
+
+<div class="pantry-photos three-up">
+  <figure>
+    <img src="baked1.jpg" alt="Home-baked treat by Yujin Kwon">
+  </figure>
+  <figure>
+    <img src="baked2.jpg" alt="Home-baked treat by Yujin Kwon">
+  </figure>
+  <figure>
+    <img src="baked3.jpg" alt="Home-baked treat by Yujin Kwon">
+  </figure>
+</div>
+
+<p>Baking is my favorite way to unwind and share something tangible with the people around me. I wouldn't call myself an expert yet, but I'm a dedicated student of the craft, always tinkering with a recipe until it's just right. My current pursuit is the elusive Levain-style chocolate chip cookie — thick, craggy, and gooey in the middle. If you have thoughts on how to get there, I'd love a taste-tester (and a second opinion)!</p>
 
 </main>
 <footer>&copy; Yujin Kwon</footer>
