@@ -60,11 +60,13 @@
   .ref .role{font-size:14px; color:var(--ink-soft); margin-bottom:2px;}
   footer{text-align:center; padding:40px 24px 60px; font-size:13px; color:var(--ink-soft);}
   .pantry-photos{display:flex; gap:16px; margin:0 0 32px 0; flex-wrap:wrap;}
-  .pantry-photos figure{flex:1 1 260px; margin:0;}
+  .pantry-photos figure{flex:1 1 260px; margin:0; position:relative;}
   .pantry-photos img{width:100%; height:260px; object-fit:cover; border-radius:6px; border:1px solid var(--rule); display:block;}
   .pantry-photos figcaption{font-size:13px; color:var(--ink-soft); margin-top:8px; text-align:center; font-style:italic;}
   .pantry-photos.three-up figure{flex-basis:200px;}
   .pantry-photos.three-up img{height:200px;}
+  .photo-credit{position:absolute; left:10px; bottom:10px; font-size:11px; line-height:1; color:#fff;
+    background:rgba(28,37,65,0.55); padding:4px 8px; border-radius:4px; letter-spacing:0.01em; font-style:italic;}
   @media (max-width:600px){.hero h1{font-size:32px;} .pantry-photos{flex-direction:column;}}
 </style>
 
@@ -83,9 +85,11 @@
 <div class="pantry-photos">
   <figure>
     <img src="pantry1.jpg" alt="St. Vincent de Paul food pantry (photography: Central Texas Food Bank)">
+    <span class="photo-credit">Photo: Central Texas Food Bank</span>
   </figure>
   <figure>
     <img src="pantry2.jpg" alt="St. Vincent de Paul food pantry (photography: Central Texas Food Bank)">
+    <span class="photo-credit">Photo: Central Texas Food Bank</span>
   </figure>
 </div>
 
@@ -95,17 +99,17 @@
 
 <div class="pantry-photos three-up">
   <figure>
-    <img src="baked1.jpg" alt="Mint chocolate ganache cake">
+    <img src="baked1.jpg" alt="Home-baked treat by Yujin Kwon">
   </figure>
   <figure>
-    <img src="baked2.jpg" alt="Chocolate chip cookies">
+    <img src="baked2.jpg" alt="Home-baked treat by Yujin Kwon">
   </figure>
   <figure>
-    <img src="baked3.jpg" alt="Pumpkin spice coffee cake">
+    <img src="baked3.jpg" alt="Home-baked treat by Yujin Kwon">
   </figure>
 </div>
 
-<p>Baking is one of my favorite ways to quiet a busy mind and share something tangible with the people around me. I wouldn't call myself an expert yet, but I'm a dedicated student of the craft, always perfecting my recipe until it's just right. My current pursuit is the perfect Levain-style chocolate chip cookie — the one that can outdo the original! I am also in search of a taste-tester who can help me in this journey.</p>
+<p>Baking is one of my favorite ways to quiet a busy mind and share something tangible with the people around me. I wouldn't call myself an expert yet, but I'm a dedicated student of the craft, always perfecting my recipe until it's just right. My current pursuit is the perfect Levain-style chocolate chip cookie that can outdo the original! I am also in search of a taste-tester who can help me in this journey.</p>
 
 </main>
 <footer>&copy; Yujin Kwon</footer>
